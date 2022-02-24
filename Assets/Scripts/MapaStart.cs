@@ -48,7 +48,9 @@ public class MapaStart : MonoBehaviour
             case 1: case 2:
                 Marcador.transform.position = new Vector3(-3, -1, -3);
                 break;
-
+            case 3:
+                Marcador.transform.position = new Vector3(-4, -2, -3);
+                break;
             default:
 
                 break;
