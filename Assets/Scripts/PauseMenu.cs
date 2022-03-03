@@ -12,7 +12,7 @@ public class PauseMenu : MonoBehaviour
 
     public Animator fadeMenu;
 
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
