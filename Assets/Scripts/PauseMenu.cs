@@ -9,19 +9,46 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject volumeOptions;
+    public GameObject iconoOpciones;
+    public GameObject iconoMapa;
+    public GameObject iconoInv;
 
     public Animator fadeMenu;
 
+
+    void Start()
+    {
+        pauseMenuUI.SetActive(false);
+        iconoInv.SetActive(true);
+        iconoMapa.SetActive(true);
+        iconoOpciones.SetActive(true);
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && pauseMenuUI.activeSelf == false)
         {
             GameIsPaused = true;
             pauseMenuUI.SetActive(true);
+            iconoInv.SetActive(false);
+            iconoMapa.SetActive(false);
+            iconoOpciones.SetActive(false);
             fadeMenu.enabled = true;
             fadeMenu.Play("FadeMenu");
             Pause();
 
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape) && pauseMenuUI.activeSelf == true)
+        {
+            Time.timeScale = 1f;
+            GameIsPaused = false;
+            pauseMenuUI.SetActive(false);
+            volumeOptions.SetActive(false);
+            iconoInv.SetActive(true);
+            iconoMapa.SetActive(true);
+            iconoOpciones.SetActive(true);
+            fadeMenu.enabled = true;
+            fadeMenu.Play("FadeMenu");
         }
     }
 

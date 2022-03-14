@@ -65,6 +65,7 @@ public class Dialog : MonoBehaviour
             didDialogStart = false;
             dialogPanel.SetActive(false);
             dialogMark.SetActive(true);
+
             Time.timeScale = 1f;
         }
     }
@@ -84,9 +85,14 @@ public class Dialog : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Vector3 linePos = gameObject.transform.position;
+            float linePosX = gameObject.transform.position.x;
+            float linePosY = gameObject.transform.position.y + 1;
+
             isPlayerInRange = true;
             dialogMark.SetActive(true);
-           
+
+            dialogMark.transform.position = new Vector3(linePosX, linePosY, 0);
 
         }
        

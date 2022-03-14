@@ -10,9 +10,20 @@ public class MapaStart : MonoBehaviour
     public GameObject MapaAssets;
     public GameObject Minimapa;
     public GameObject Marcador;
+    public GameObject iconoOpciones;
+    public GameObject iconoMapa;
+    public GameObject iconoInv;
+
 
     int sceneID;
-   
+
+
+     void Start()
+    {
+        iconoMapa.SetActive(true);
+        iconoOpciones.SetActive(true);
+        iconoInv.SetActive(true);
+    }
 
     void Update()
     {
@@ -24,6 +35,9 @@ public class MapaStart : MonoBehaviour
             MapaAssets.SetActive(true);
             Minimapa.SetActive(false);
             Marcador.SetActive(true);
+            iconoMapa.SetActive(false);
+            iconoOpciones.SetActive(false);
+            iconoInv.SetActive(false);
             EscenarioActual();
 
         }
@@ -33,6 +47,9 @@ public class MapaStart : MonoBehaviour
             MapaAssets.SetActive(false);
             Minimapa.SetActive(true);
             Marcador.SetActive(false);
+            iconoMapa.SetActive(true);
+            iconoOpciones.SetActive(true);
+            iconoInv.SetActive(true);
 
         }
 
