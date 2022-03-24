@@ -46,13 +46,22 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 11d185097326a4a058d4494084535f3b, type: 3}
     - {fileID: 2800000, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
     - {fileID: 2800000, guid: 160053507aaae42d8818f3a208334627, type: 3}
-    - {fileID: 2800000, guid: bb4ce2a469803437cbd40090daff7785, type: 3}
+    - {fileID: 2800000, guid: af9d14aa264414b74bb10ae5de1c098e, type: 3}
+    - {fileID: 2800000, guid: f11b31a305d814447a3c2918cdb8ce59, type: 3}
+    - {fileID: 2800000, guid: 3e8934251af9f4e9c99dff5f65c1d422, type: 3}
+    - {fileID: 2800000, guid: 08cf001cf64334d6487fda745648784e, type: 3}
+    - {fileID: 2800000, guid: 2f60f1c46ae0f46fa9425afcb94f4c65, type: 3}
+    - {fileID: 2800000, guid: 87a673b027a36423780ea071e63bc67c, type: 3}
+    - {fileID: 2800000, guid: 3623bbc83b9364db8a9d77455641f353, type: 3}
+    - {fileID: 2800000, guid: f1661035470e14d4ba5b8c4f870ef7af, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 160053507aaae42d8818f3a208334627, type: 3}
+  - {fileID: 9029257485692488357, guid: 87a673b027a36423780ea071e63bc67c, type: 3}
+  - {fileID: 6930012519215443850, guid: 87a673b027a36423780ea071e63bc67c, type: 3}
   - {fileID: 5552292402991834073, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
   - {fileID: 5445193342825570963, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
   - {fileID: -4217147989069591659, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
@@ -64,15 +73,29 @@ SpriteAtlas:
   - {fileID: -5947523517162361663, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
   - {fileID: -8439383948037167125, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
   - {fileID: -6511435261461226776, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
-  - {fileID: -8882051020309413467, guid: bb4ce2a469803437cbd40090daff7785, type: 3}
-  - {fileID: 2928042697930890107, guid: bb4ce2a469803437cbd40090daff7785, type: 3}
-  - {fileID: -4801198921602867578, guid: bb4ce2a469803437cbd40090daff7785, type: 3}
+  - {fileID: 1358941209805208012, guid: f11b31a305d814447a3c2918cdb8ce59, type: 3}
+  - {fileID: 1747187529780937739, guid: f11b31a305d814447a3c2918cdb8ce59, type: 3}
+  - {fileID: 7532183203161753845, guid: 2f60f1c46ae0f46fa9425afcb94f4c65, type: 3}
+  - {fileID: -6195036151548838608, guid: 2f60f1c46ae0f46fa9425afcb94f4c65, type: 3}
+  - {fileID: 5162668006349467065, guid: 3e8934251af9f4e9c99dff5f65c1d422, type: 3}
+  - {fileID: -3822434495715987900, guid: 3e8934251af9f4e9c99dff5f65c1d422, type: 3}
+  - {fileID: -2592532689006503171, guid: 3e8934251af9f4e9c99dff5f65c1d422, type: 3}
+  - {fileID: 8089448168853084177, guid: f1661035470e14d4ba5b8c4f870ef7af, type: 3}
+  - {fileID: -5596769689437354497, guid: f1661035470e14d4ba5b8c4f870ef7af, type: 3}
+  - {fileID: 8838192142711318785, guid: 3623bbc83b9364db8a9d77455641f353, type: 3}
+  - {fileID: -5537733265272749645, guid: 3623bbc83b9364db8a9d77455641f353, type: 3}
   - {fileID: 5213305125623355241, guid: 11d185097326a4a058d4494084535f3b, type: 3}
   - {fileID: -8104853399822082315, guid: 11d185097326a4a058d4494084535f3b, type: 3}
   - {fileID: 6062866422004656623, guid: 11d185097326a4a058d4494084535f3b, type: 3}
   - {fileID: 4248323708003403034, guid: 11d185097326a4a058d4494084535f3b, type: 3}
+  - {fileID: -1928598124621713318, guid: af9d14aa264414b74bb10ae5de1c098e, type: 3}
+  - {fileID: 5543599687636594154, guid: af9d14aa264414b74bb10ae5de1c098e, type: 3}
+  - {fileID: -3524187211830465906, guid: 08cf001cf64334d6487fda745648784e, type: 3}
+  - {fileID: -7348709203061840738, guid: 08cf001cf64334d6487fda745648784e, type: 3}
   m_PackedSpriteNamesToIndex:
   - Arbol_1
+  - uAT_IZDA_1
+  - uAT_IZDA_0
   - Tiles_TIERRA_6
   - Tiles_TIERRA_5
   - Tiles_TIERRA_4
@@ -84,13 +107,25 @@ SpriteAtlas:
   - Tiles_TIERRA_1
   - Tiles_TIERRA_0
   - Tiles_TIERRA_7
-  - Briznas_1
-  - Briznas_0
-  - Briznas_2
+  - uAT_INF_0
+  - uAT_INF_1
+  - uAT_inf_DCHA_1
+  - uAT_inf_DCHA_0
+  - TilesAddonsTierra_1
+  - TilesAddonsTierra_0
+  - TilesAddonsTierra_2
+  - uAT_sup_DCHA_0
+  - uAT_sup_DCHA_1
+  - uAT_inf_IZDA_1
+  - uAT_inf_IZDA_0
   - Tiles_EXT_Tierra_3
   - Tiles_EXT_Tierra_2
   - Tiles_EXT_Tierra_1
   - Tiles_EXT_Tierra_0
+  - uAT_sup_IZDA_0
+  - uAT_sup_IZDA_1
+  - uAT_DCHA_1
+  - uAT_DCHA_0
   m_RenderDataMap: {}
   m_Tag: FixTearing
   m_IsVariant: 0
