@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D playerRb;
     private Vector2 moveInput;
     private Animator playerAnimator;
+    public AudioSource pasos;
+    bool vActive;
+    bool hActive;
 
     void Start()
     {
@@ -27,10 +30,47 @@ public class PlayerMovement : MonoBehaviour
         playerAnimator.SetFloat("Horizontal", moveX);
         playerAnimator.SetFloat("Vertical", moveY);
         playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
+
+        if (Input.GetButtonDown("Horizontal"))
+        {
+            if (vActive == false)
+            {
+                hActive = true;
+                pasos.Play();
+            }
+        }
+
+        if (Input.GetButtonDown("Vertical"))
+        {
+            if (hActive == false)
+            {
+                vActive = true;
+                pasos.Play();
+            }
+        }
+
+        if (Input.GetButtonUp("Horizontal"))
+        {
+            hActive = false;
+            if (vActive == false)
+            {
+                pasos.Pause();
+            }
+        }
+
+        if (Input.GetButtonUp("Vertical"))
+        {
+            vActive = false;
+            if (hActive == false)
+            {
+                pasos.Pause();
+            }
+        }
     }
 
     private void FixedUpdate()
     {
         playerRb.MovePosition(playerRb.position + moveInput * speed * Time.fixedDeltaTime);
     }
+
 }

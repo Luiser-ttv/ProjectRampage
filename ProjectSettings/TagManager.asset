@@ -7,6 +7,7 @@ TagManager:
   - Banned
   - Chest
   - Balloon
+  - Rana
   layers:
   - Default
   - TransparentFX
@@ -55,4 +56,7 @@ TagManager:
     locked: 0
   - name: Props
     uniqueID: 1097754521
+    locked: 0
+  - name: UI
+    uniqueID: 3608724547
     locked: 0

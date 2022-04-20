@@ -13,9 +13,9 @@ public class MapaStart : MonoBehaviour
     public GameObject iconoOpciones;
     public GameObject iconoMapa;
     public GameObject iconoInv;
+    public GameObject Jugador;
+    public Vector2 posMarcador;
 
-
-    int sceneID;
 
 
      void Start()
@@ -23,6 +23,7 @@ public class MapaStart : MonoBehaviour
         iconoMapa.SetActive(true);
         iconoOpciones.SetActive(true);
         iconoInv.SetActive(true);
+        
     }
 
     void Update()
@@ -59,20 +60,26 @@ public class MapaStart : MonoBehaviour
 
     private void EscenarioActual()
     {
-        sceneID = SceneManager.GetActiveScene().buildIndex;
-        switch (sceneID)
-        {
-            case 1: case 2:
-                Marcador.transform.position = new Vector3(-3, -1, -3);
-                break;
-            case 3:
-                Marcador.transform.position = new Vector3(-4, -2, -3);
-                break;
-            default:
+        Marcador.transform.position = new Vector2(0,0);
+        float jugadorPosX = Jugador.transform.position.x;
+        float jugadorPosY = Jugador.transform.position.y;
 
-                break;
+        if (jugadorPosX >= 17 && jugadorPosY <= -17)
+        {
+            //Debug.Log(jugadorPosX);
+            Marcador.transform.position = posMarcador;
         }
-        
-        
+        else if (jugadorPosX <= 17 && jugadorPosY <= -17)
+        {
+            Marcador.transform.position = posMarcador;
+        }
+
+
+
+
+
+
+
+
     }
 }
