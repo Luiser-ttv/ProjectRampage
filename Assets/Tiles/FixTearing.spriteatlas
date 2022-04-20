@@ -54,6 +54,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 87a673b027a36423780ea071e63bc67c, type: 3}
     - {fileID: 2800000, guid: 3623bbc83b9364db8a9d77455641f353, type: 3}
     - {fileID: 2800000, guid: f1661035470e14d4ba5b8c4f870ef7af, type: 3}
+    - {fileID: 2800000, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -62,6 +63,20 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 160053507aaae42d8818f3a208334627, type: 3}
   - {fileID: 9029257485692488357, guid: 87a673b027a36423780ea071e63bc67c, type: 3}
   - {fileID: 6930012519215443850, guid: 87a673b027a36423780ea071e63bc67c, type: 3}
+  - {fileID: -6222603400971142247, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: -2297527672748124739, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: 8128150219813678198, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: 7239878778187876310, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: -7391036081270854621, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: -2471549458813859808, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: -5530168281416723188, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: -3599098702731398936, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: -5453353974252338774, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: 24677076488776440, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: 7146747435190647520, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: -8659480605116483114, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: 5385536380798031889, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+  - {fileID: 1474338828922338982, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
   - {fileID: 5552292402991834073, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
   - {fileID: 5445193342825570963, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
   - {fileID: -4217147989069591659, guid: 9d0dadb181abc4da4836c1f903bb248a, type: 3}
@@ -96,6 +111,20 @@ SpriteAtlas:
   - Arbol_1
   - uAT_IZDA_1
   - uAT_IZDA_0
+  - Tiles_PT_13
+  - Tiles_PT_12
+  - Tiles_PT_8
+  - Tiles_PT_11
+  - Tiles_PT_9
+  - Tiles_PT_10
+  - Tiles_PT_0
+  - Tiles_PT_1
+  - Tiles_PT_2
+  - Tiles_PT_3
+  - Tiles_PT_4
+  - Tiles_PT_5
+  - Tiles_PT_6
+  - Tiles_PT_7
   - Tiles_TIERRA_6
   - Tiles_TIERRA_5
   - Tiles_TIERRA_4

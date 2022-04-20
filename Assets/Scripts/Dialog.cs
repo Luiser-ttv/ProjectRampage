@@ -14,31 +14,63 @@ public class Dialog : MonoBehaviour
 
     [SerializeField, TextArea(4,6)] private string[] dialogLines;
 
-    
-
     private float typingTime = 0.05f;
 
+    public MissionController missionCont;
+
+    
     private bool isPlayerInRange;
+    private bool isBannedInRange;
     private bool didDialogStart;
     private int lineIndex;
+
+    void Start()
+    {
+        missionCont = GameObject.FindGameObjectWithTag("Player").GetComponent<MissionController>();
+    }
+
     void Update()
     {
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
+        if (missionCont.isCompleted)
         {
-            if (!didDialogStart)
+
+        }
+        else
+        {
+            if (isBannedInRange && Input.GetKeyDown(KeyCode.E))
             {
-                StartDialog();
+                if (!didDialogStart)
+                {
+                    StartDialog();
+                }
+                else if (dialogText.text == dialogLines[lineIndex])
+                {
+                    NextDialogLine();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    dialogText.text = dialogLines[lineIndex];
+                }
             }
-            else if (dialogText.text == dialogLines[lineIndex])
+            else if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
             {
-                NextDialogLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                dialogText.text = dialogLines[lineIndex];
+                if (!didDialogStart)
+                {
+                    StartDialog();
+                }
+                else if (dialogText.text == dialogLines[lineIndex])
+                {
+                    NextDialogLine();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    dialogText.text = dialogLines[lineIndex];
+                }
             }
         }
+        
     }
 
     private void StartDialog()
@@ -65,6 +97,7 @@ public class Dialog : MonoBehaviour
             didDialogStart = false;
             dialogPanel.SetActive(false);
             dialogMark.SetActive(true);
+            
 
             Time.timeScale = 1f;
         }
@@ -83,7 +116,21 @@ public class Dialog : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Banned"))
+        {
+            Vector3 linePos = gameObject.transform.position;
+            float linePosX = gameObject.transform.position.x;
+            float linePosY = gameObject.transform.position.y + 1;
+
+            isBannedInRange = true;
+            dialogMark.SetActive(true);
+
+            dialogMark.transform.position = new Vector3(linePosX, linePosY, 0);
+            
+            
+
+        }
+        else if (collision.gameObject.CompareTag("Player"))
         {
             Vector3 linePos = gameObject.transform.position;
             float linePosX = gameObject.transform.position.x;
@@ -100,7 +147,13 @@ public class Dialog : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Banned"))
+        {
+
+            isBannedInRange = false;
+            dialogMark.SetActive(false);
+        }
+        else if (collision.gameObject.CompareTag("Player"))
         {
             isPlayerInRange = false;
             dialogMark.SetActive(false);

@@ -7,25 +7,36 @@ public class TriggerHouses : MonoBehaviour
 {
     
     private bool isPlayerInRange;
+    private bool isBannedSite;
     public int numeroEscena;
 
     void Update()
     {
-        if (isPlayerInRange)
+        if (isBannedSite)
+        {
+
+        }
+        else if (isPlayerInRange)
         {
             SceneManager.LoadScene(numeroEscena);
         }
+        
     }
 
     
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (gameObject.CompareTag("Banned"))
+        {
+            isBannedSite = true;
+        }
+        else if (collision.gameObject.CompareTag("Player"))
         {
             isPlayerInRange = true;
            
         }
+        
        
     }
 
