@@ -8,6 +8,8 @@ TagManager:
   - Chest
   - Balloon
   - Rana
+  - EndTrigger
+  - BlackScreen
   layers:
   - Default
   - TransparentFX

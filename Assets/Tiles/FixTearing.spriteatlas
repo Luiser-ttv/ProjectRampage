@@ -55,6 +55,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 3623bbc83b9364db8a9d77455641f353, type: 3}
     - {fileID: 2800000, guid: f1661035470e14d4ba5b8c4f870ef7af, type: 3}
     - {fileID: 2800000, guid: 02259b61d64f8428f8d58ba7c8f21a37, type: 3}
+    - {fileID: 2800000, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -105,6 +106,16 @@ SpriteAtlas:
   - {fileID: 4248323708003403034, guid: 11d185097326a4a058d4494084535f3b, type: 3}
   - {fileID: -1928598124621713318, guid: af9d14aa264414b74bb10ae5de1c098e, type: 3}
   - {fileID: 5543599687636594154, guid: af9d14aa264414b74bb10ae5de1c098e, type: 3}
+  - {fileID: -2479804293106477436, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
+  - {fileID: -2875789543094122594, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
+  - {fileID: 8113898495305705273, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
+  - {fileID: -5091831046334997875, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
+  - {fileID: -442261872007435021, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
+  - {fileID: -4830585607844799019, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
+  - {fileID: -5161180517243434184, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
+  - {fileID: 5417979038347313423, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
+  - {fileID: -2157475035888439947, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
+  - {fileID: -5327017262086366478, guid: 03e36ccb47846c0448a38f72688c7a86, type: 3}
   - {fileID: -3524187211830465906, guid: 08cf001cf64334d6487fda745648784e, type: 3}
   - {fileID: -7348709203061840738, guid: 08cf001cf64334d6487fda745648784e, type: 3}
   m_PackedSpriteNamesToIndex:
@@ -153,6 +164,16 @@ SpriteAtlas:
   - Tiles_EXT_Tierra_0
   - uAT_sup_IZDA_0
   - uAT_sup_IZDA_1
+  - Tiles_CR_9
+  - Tiles_CR_8
+  - Tiles_CR_3
+  - Tiles_CR_2
+  - Tiles_CR_1
+  - Tiles_CR_0
+  - Tiles_CR_7
+  - Tiles_CR_6
+  - Tiles_CR_5
+  - Tiles_CR_4
   - uAT_DCHA_1
   - uAT_DCHA_0
   m_RenderDataMap: {}

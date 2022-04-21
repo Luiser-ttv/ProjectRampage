@@ -5,6 +5,8 @@ using UnityEngine;
 public class LocoMision : MonoBehaviour
 {
     private GameObject ranaMierda;
+    private GameObject endTrigger;
+
     private Dialog myDialog;
     private LocoDialog myLocoDialog;
 
@@ -13,6 +15,7 @@ public class LocoMision : MonoBehaviour
         ranaMierda = GameObject.FindGameObjectWithTag("Rana");
         myDialog = gameObject.GetComponent<Dialog>();
         myLocoDialog = gameObject.GetComponent<LocoDialog>();
+        endTrigger = GameObject.FindGameObjectWithTag("EndTrigger");
     }
 
     // Update is called once per frame
@@ -22,6 +25,7 @@ public class LocoMision : MonoBehaviour
         {
             myDialog.enabled = false;
             myLocoDialog.enabled = true;
+            endTrigger.SetActive(true);
         }
     }
 }
